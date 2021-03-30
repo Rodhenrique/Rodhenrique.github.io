@@ -10,6 +10,9 @@
     <script src="https://kit.fontawesome.com/04a6eebba3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <title>Henrique Rodrigues</title>
 </head>
 <body>
@@ -318,16 +321,81 @@
                     </div>
                   </div>
 
-                  <div class="row portfolio-container" style="position: relative; height: 864px;">
+                  <div class="row" style="position: relative; max-height: 100%;">
 
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-app" style="position: absolute; left: 0px; top: 0px;">
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
                       <div class="portfolio-wrap">
-                        <img src="img/astro.jpg" class="img-fluid" alt="">
+                        <img src="img/api.png" class="img-fluid" alt="">
                         <div class="portfolio-info">
-                          <h4>App 1</h4>
-                          <p>App</p>
+                          <h4>WebApi ASP.NET</h4>
+                          <p>Back-End</p>
                           <div class="portfolio-links">
-                            <a href="#" class="portfolio-details-lightbox" id="mais">Ver mais</a>
+                            <a onclick="openBox(0,'mySlides','points')" class="portfolio-details-lightbox" id="mais">Ver mais</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                      <div class="portfolio-wrap">
+                        <img src="img/selenium.jpg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                          <h4>Crawler C# Selenium</h4>
+                          <p>Back-End</p>
+                          <div class="portfolio-links">
+                            <a onclick="openBox(1,'mySlides1','points1')" class="portfolio-details-lightbox" id="mais">Ver mais</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                      <div class="portfolio-wrap">
+                        <img src="img/backend.png" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                          <h4>Mc Bonalds - ASP.NET MVC</h4>
+                          <p>Back-End</p>
+                          <div class="portfolio-links">
+                            <a onclick="openBox(2,'mySlides2','points2')" class="portfolio-details-lightbox" id="mais">Ver mais</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                      <div class="portfolio-wrap">
+                        <img src="img/crypto.jpg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                          <h4>HK Arkham - Crytography</h4>
+                          <p>Back-End e Website</p>
+                          <div class="portfolio-links">
+                            <a onclick="openBox(3,'mySlides3','points3')" class="portfolio-details-lightbox" id="mais">Ver mais</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                      <div class="portfolio-wrap">
+                        <img src="img/java.jpeg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                          <h4>Sp Med Group</h4>
+                          <p>Website</p>
+                          <div class="portfolio-links">
+                            <a onclick="openBox(4,'mySlides4','points4')" class="portfolio-details-lightbox" id="mais">Ver mais</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                      <div class="portfolio-wrap">
+                        <img src="img/form.webp" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                          <h4>Criador de formulário</h4>
+                          <p>Website</p>
+                          <div class="portfolio-links">
+                            <a onclick="openBox(5,'mySlides5','points5')" class="portfolio-details-lightbox" id="mais">Ver mais</a>
                           </div>
                         </div>
                       </div>
@@ -392,8 +460,293 @@
                 </div>
             </div>
         </section>
-
     </main>
+
+    <div id="portfolio-details" class="portfolio-details">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <h2 class="portfolio-title">WebApi ASP.NET 2.1 - Real Vagas</h2>
+
+            <div class="swiper-container">
+              <div>
+                <iframe class="mySlides responsive-iframe" src="https://www.youtube.com/embed/ObLLPi970T8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <img class="mySlides" src="img/imgProj1.png" style="width:100%;">
+                <img class="mySlides" src="img/img1Proj1.png" style="width:100%;">
+                <img class="mySlides" src="img/img2Proj1.png" style="width:100%;">
+                <img class="mySlides" src="img/img3Proj1.png" style="width:100%;">
+              
+                <button class="buttonLeft" onclick="plusSlides(-1)">
+                  <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="buttonRight" onclick="plusSlides(1)">
+                  <i class="fas fa-chevron-right"></i>
+                </button>
+
+                <div class="container-points">
+                  <span class="points" onclick="currentDiv(1)"></span>
+                  <span class="points" onclick="currentDiv(2)"></span>
+                  <span class="points" onclick="currentDiv(3)"></span>
+                  <span class="points" onclick="currentDiv(4)"></span>
+                  <span class="points" onclick="currentDiv(5)"></span>
+                </div>
+              </div>
+            </div>
+           
+          </div>
+          <div class="col-lg-4 portfolio-info">
+            <h3>Informações do projeto</h3>
+            <ul>
+              <li><strong>Categoria</strong>: Back-End</li>
+              <li><strong>Cliente</strong>: Real Vagas - Senai</li>
+              <li><strong>Data do projeto</strong>: 30/08/2020</li>
+              <li><strong>URL do projeto</strong>: <a target="_blank" href="https://github.com/Rodhenrique/Senai-CodeCreators/tree/master/Sprint-2/Real_Vagas_API-2.0">www.github.com/rodherique</a></li>
+            </ul>
+            <p>
+              WebApi feita para o Website Real Vagas um site de vagas de emprego, onde foi desenvolvidor para conclusão do T.C.C do curso do Senai Infórmatica. API usar SQL Server para banco de dados, e criptografar os dados que vão para o SQL Server.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="portfolio-details" class="portfolio-details">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <h2 class="portfolio-title">Crawler C# - Verificador de CPF e CNPJ</h2>
+
+            <div class="swiper-container">
+              <div>
+                <iframe class="mySlides1 responsive-iframe" src="https://www.youtube.com/embed/KyWtGzZX_ZE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <img class="mySlides1" src="img/proj2.png" style="width:100%;">
+                <img class="mySlides1" src="img/proj2-1.png" style="width:100%;">
+              
+                <button class="buttonLeft" onclick="plusSlides(-1)">
+                  <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="buttonRight" onclick="plusSlides(1)">
+                  <i class="fas fa-chevron-right"></i>
+                </button>
+
+                <div class="container-points">
+                  <span class="points1 points" onclick="currentDiv(1)"></span>
+                  <span class="points1 points" onclick="currentDiv(2)"></span>
+                  <span class="points1 points" onclick="currentDiv(3)"></span>
+                </div>
+              </div>
+            </div>
+           
+          </div>
+          <div class="col-lg-4 portfolio-info">
+            <h3>Informações do projeto</h3>
+            <ul>
+              <li><strong>Categoria</strong>: Back-End</li>
+              <li><strong>Cliente</strong>: Henrique Silva</li>
+              <li><strong>Data do projeto</strong>: 15/10/2020</li>
+              <li><strong>URL do projeto</strong>: <a href="https://github.com/Rodhenrique/Web-Crawler-C-Selenium">www.github.com/rodhenrique</a></li>
+            </ul>
+            <p>
+              Aplicação feita para consulta CPF ou CNPJ sem precisa fazer isso manualmente, caso necessário pode validar vários CPF ou CNPJ automaticamente. 
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="portfolio-details" class="portfolio-details">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <h2 class="portfolio-title">Mc Bonalds - ASP.NET Core</h2>
+
+            <div class="swiper-container">
+              <div>
+                <iframe class="mySlides2 responsive-iframe" src="https://www.youtube.com/embed/CT3ypYyw0gg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>               
+                <img class="mySlides2" src="img/proj4.png" style="width:100%;">
+                <img class="mySlides2" src="img/proj4-1.png" style="width:100%;">
+                <img class="mySlides2" src="img/proj4-2.png" style="width:100%;">
+
+              
+                <button class="buttonLeft" onclick="plusSlides(-1)">
+                  <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="buttonRight" onclick="plusSlides(1)">
+                  <i class="fas fa-chevron-right"></i>
+                </button>
+
+                <div class="container-points">
+                  <span class="points2 points" onclick="currentDiv(1)"></span>
+                  <span class="points2 points" onclick="currentDiv(2)"></span>
+                  <span class="points2 points" onclick="currentDiv(3)"></span>
+                  <span class="points2 points" onclick="currentDiv(4)"></span>
+                </div>
+              </div>
+            </div>
+           
+          </div>
+          <div class="col-lg-4 portfolio-info">
+            <h3>Informações do projeto</h3>
+            <ul>
+              <li><strong>Categoria</strong>: WebSite</li>
+              <li><strong>Cliente</strong>: Cesar e Alexandre </li>
+              <li><strong>Data do projeto</strong>: 10/11/2019</li>
+              <li><strong>URL do projeto</strong>: <a href="https://github.com/Rodhenrique/Mcbonalds">www.github.com/rodhenrique</a></li>
+            </ul>
+            <p>
+              Website de uma hamburgueria para fazer pedidos de hamburgueres, shakes e combos. Feito em ASP.NET core, projeto academico do Senai.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="portfolio-details" class="portfolio-details">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <h2 class="portfolio-title">HK Arkham - Crytography - ASP.NET Core C#</h2>
+
+            <div class="swiper-container">
+              <div>
+                <iframe class="mySlides3 responsive-iframe" src="https://www.youtube.com/embed/NM5rmCNxlmo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <img class="mySlides3" src="img/proj3.png" style="width:100%;">
+                <img class="mySlides3" src="img/proj3-1.png" style="width:100%;">
+                <img class="mySlides3" src="img/proj3-2.png" style="width:100%;">
+                <img class="mySlides3" src="img/proj3-3.png" style="width:100%;">
+              
+                <button class="buttonLeft" onclick="plusSlides(-1)">
+                  <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="buttonRight" onclick="plusSlides(1)">
+                  <i class="fas fa-chevron-right"></i>
+                </button>
+
+                <div class="container-points">
+                  <span class="points3 points" onclick="currentDiv(1)"></span>
+                  <span class="points3 points" onclick="currentDiv(2)"></span>
+                  <span class="points3 points" onclick="currentDiv(3)"></span>
+                  <span class="points3 points" onclick="currentDiv(4)"></span>
+                </div>
+              </div>
+            </div>
+           
+          </div>
+          <div class="col-lg-4 portfolio-info">
+            <h3>Informações do projeto</h3>
+            <ul>
+              <li><strong>Categoria</strong>: WebSite e Back-End</li>
+              <li><strong>Cliente</strong>: Henrique Silva </li>
+              <li><strong>Data do projeto</strong>: 16/05/2020</li>
+              <li><strong>URL do projeto</strong>: +55 (11) 97742-9018</li>
+            </ul>
+            <p>
+              Aplicação de criptografia de dados, onde ela gerar um hash e texto criptografado. Com hash e o texto você conseguem descryptograda o texto criptografado. 
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="portfolio-details" class="portfolio-details">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <h2 class="portfolio-title">Sp Med Group - Website</h2>
+
+            <div class="swiper-container">
+              <div>
+                <iframe class="mySlides4 responsive-iframe" src="https://www.youtube.com/embed/6npCw_5PfWM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <img class="mySlides4" src="img/proj6.png" style="width:100%;">
+                <img class="mySlides4" src="img/proj6-1.png" style="width:100%;">
+                <img class="mySlides4" src="img/proj6-2.png" style="width:100%;">
+                <img class="mySlides4" src="img/proj6-3.png" style="width:100%;">
+              
+                <button class="buttonLeft" onclick="plusSlides(-1)">
+                  <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="buttonRight" onclick="plusSlides(1)">
+                  <i class="fas fa-chevron-right"></i>
+                </button>
+
+                <div class="container-points">
+                  <span class="points4 points" onclick="currentDiv(1)"></span>
+                  <span class="points4 points" onclick="currentDiv(2)"></span>
+                  <span class="points4 points" onclick="currentDiv(3)"></span>
+                  <span class="points4 points" onclick="currentDiv(4)"></span>
+                  <span class="points4 points" onclick="currentDiv(5)"></span>
+                </div>
+              </div>
+            </div>
+           
+          </div>
+          <div class="col-lg-4 portfolio-info">
+            <h3>Informações do projeto</h3>
+            <ul>
+              <li><strong>Categoria</strong>: WebSite</li>
+              <li><strong>Cliente</strong>: Saulo e Carol </li>
+              <li><strong>Data do projeto</strong>: 23/03/2020</li>
+              <li><strong>URL do projeto</strong>: <a href="https://github.com/Rodhenrique/SpMedGroup">www.github.com/rodhenrique</a></li>
+            </ul>
+            <p>
+              Website criado para gerenciamento de clinicas hospitalares, onde o pode tem o controle dos médicos, usuários, Prontuários e consultas. 
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="portfolio-details" class="portfolio-details">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <h2 class="portfolio-title">Criador de formulários - ASP.NET Core</h2>
+
+            <div class="swiper-container">
+              <div>
+                <iframe class="mySlides5 responsive-iframe" src="https://www.youtube.com/embed/nEHg9Y-df8A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                
+                <img class="mySlides5" src="img/proj5.png" style="width:100%;">
+                <img class="mySlides5" src="img/proj5-1.png" style="width:100%;">
+                <img class="mySlides5" src="img/proj5-2.png" style="width:100%;">
+                <img class="mySlides5" src="img/proj5-3.png" style="width:100%;">
+              
+                <button class="buttonLeft" onclick="plusSlides(-1)">
+                  <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="buttonRight" onclick="plusSlides(1)">
+                  <i class="fas fa-chevron-right"></i>
+                </button>
+
+                <div class="container-points">
+                  <span class="points5 points" onclick="currentDiv(1)"></span>
+                  <span class="points5 points" onclick="currentDiv(2)"></span>
+                  <span class="points5 points" onclick="currentDiv(3)"></span>
+                  <span class="points5 points" onclick="currentDiv(4)"></span>
+                  <span class="points5 points" onclick="currentDiv(5)"></span>
+                </div>
+              </div>
+            </div>
+           
+          </div>
+          <div class="col-lg-4 portfolio-info">
+            <h3>Informações do projeto</h3>
+            <ul>
+              <li><strong>Categoria</strong>: WebSite</li>
+              <li><strong>Cliente</strong>: Henrique Silva </li>
+              <li><strong>Data do projeto</strong>: 14/11/2020</li>
+              <li><strong>URL do projeto</strong>: <a href="https://github.com/Rodhenrique/Agrotools-Questionario-interativo">www.github.com/rodhenrique</a></li>
+            </ul>
+            <p>
+              Website para criação de formulários onde pode fazer criação do seu formulário para outra pessoa responder, todas respostas dos formulários respondidos vão para sua dashboard.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <i id="close_box" class="mobile-nav-toggle fas fa-times"></i>
+    </div>
 </body>
 </html>
 
